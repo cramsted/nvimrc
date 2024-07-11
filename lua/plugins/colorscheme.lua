@@ -10,7 +10,7 @@ return { -- You can easily change to a different colorscheme.
 			-- Load the colorscheme here.
 			-- Like many other themes, this one has different styles, and you could load
 			-- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
-			-- vim.cmd.colorscheme("tokyonight-night")
+			vim.cmd.colorscheme("tokyonight-night")
 
 			-- You can configure highlights by doing something like:
 			vim.cmd.hi("Comment gui=none")
@@ -20,10 +20,27 @@ return { -- You can easily change to a different colorscheme.
 		"morhetz/gruvbox",
 		priority = 1000, -- Make sure to load this before all the other start plugins.
 		init = function()
-			-- Load the colorscheme here.
-			-- Like many other themes, this one has different styles, and you could load
-			-- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
-			vim.cmd.colorscheme("gruvbox")
+			-- vim.cmd.colorscheme("gruvbox")
+
+			-- You can configure highlights by doing something like:
+			vim.cmd.hi("Comment gui=none")
+		end,
+	},
+	{
+		"sainnhe/gruvbox-material",
+		priority = 1000, -- Make sure to load this before all the other start plugins.
+		init = function()
+			-- vim.cmd.colorscheme("gruvbox-material")
+
+			-- You can configure highlights by doing something like:
+			vim.cmd.hi("Comment gui=none")
+		end,
+	},
+	{
+		"rebelot/kanagawa.nvim",
+		priority = 1000, -- Make sure to load this before all the other start plugins.
+		init = function()
+			-- vim.cmd.colorscheme("kanagawa")
 
 			-- You can configure highlights by doing something like:
 			vim.cmd.hi("Comment gui=none")

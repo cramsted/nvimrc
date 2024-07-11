@@ -1,4 +1,4 @@
--- This file contains basic Vim configs and options, and sets up Lazy.nvim.
+--cThis file contains basic Vim configs and options, and sets up Lazy.nvim.
 -- All plugins are defined in, and managed in their own files
 
 -- Set <space> as the leader key
@@ -63,7 +63,7 @@ vim.opt.splitbelow = true
 --  and `:help 'listchars'`
 vim.opt.list = true
 vim.opt.listchars = {
-	tab = "|-",
+	tab = "| ",
 	trail = "·",
 	nbsp = "␣",
 }
