@@ -176,7 +176,6 @@ return {
 			local servers = {
 				clangd = {},
 				-- gopls = {},
-				nil_ls = {},
 				texlab = {
 					on_attach = on_attach,
 					capabilities = capabilities,
@@ -255,7 +254,6 @@ return {
 				"clang-format",
 				"codelldb",
 				-- "gopls",
-				"nil",
 				"texlab",
 				"latexindent",
 			})
