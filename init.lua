@@ -86,7 +86,7 @@ vim.keymap.set("n", "<leader>V", "ggVG", { desc = "Select All" })
 
 vim.keymap.set("n", "<leader>w", ":w<CR>")
 vim.keymap.set("v", "<C-r>", '"hy:%s/<C-r>h/<C-r>h/g<left><left>', { desc = "Find/Replace Selected Text" })
-vim.keymap.set("n", ";", ":", { desc = "CMD enter command mode" })
+-- vim.keymap.set("n", ";", ":", { desc = "CMD enter command mode" })
 
 -- resizing windows
 vim.keymap.set({ "n", "v" }, "<C-Left>", ":vertical resize +3<CR>", { desc = "Move Window Border Left" })
