@@ -78,7 +78,10 @@ vim.opt.cursorline = true
 vim.opt.scrolloff = 5
 
 -- [[ Basic Keymaps ]]
---
+
+-- remap 'jj' to Esc
+vim.keymap.set("i", "jj", "<Esc>")
+
 -- Set highlight on search, but clear on pressing <Esc> in normal mode
 vim.opt.hlsearch = true
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
