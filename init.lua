@@ -87,6 +87,7 @@ vim.keymap.set("i", "jj", "<Esc>")
 vim.opt.hlsearch = true
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 vim.keymap.set("n", "<leader>V", "ggVG", { desc = "Select All" })
+vim.keymap.set("n", "<leader>v", ":vsp<CR>", { desc = "Vertical Split" })
 
 vim.keymap.set("n", "<leader>w", ":w<CR>")
 vim.keymap.set("v", "<C-r>", '"hy:%s/<C-r>h/<C-r>h/g<left><left>', { desc = "Find/Replace Selected Text" })
