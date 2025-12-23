@@ -1,4 +1,4 @@
---cThis file contains basic Vim configs and options, and sets up Lazy.nvim.
+--This file contains basic Vim configs and options, and sets up Lazy.nvim.
 -- All plugins are defined in, and managed in their own files
 
 -- Set <space> as the leader key
@@ -81,7 +81,8 @@ vim.opt.scrolloff = 5
 -- [[ Basic Keymaps ]]
 
 -- remap 'jj' to Esc
-vim.keymap.set("i", "jj", "<Esc>")
+-- vim.keymap.set("i", "jj", "<Esc>")
+vim.keymap.set('i', 'jj', '<Esc>', { noremap = true, silent = true, nowait = true })
 
 -- Set highlight on search, but clear on pressing <Esc> in normal mode
 vim.opt.hlsearch = true

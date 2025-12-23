@@ -6,14 +6,26 @@ return {
   opts = {
     bigfile = { enabled = true },
     dashboard = { enabled = true },
-    explorer = { enabled = true },
+    -- explorer = { enabled = true },
     indent = { enabled = true },
     input = { enabled = true },
     notifier = {
       enabled = true,
       timeout = 3000,
     },
-    picker = { enabled = true },
+    picker = {
+      enabled = true,
+      -- win = {
+      --   input = {
+      --     keys = {
+      --       ["<C-n>"] = "list_down",
+      --       ["<C-p>"] = "list_up",
+      --       ["<Down>"] = "list_down",
+      --       ["<Up>"]   = "list_up",
+      --     },
+      --   },
+      -- },
+    },
     quickfile = { enabled = true },
     scope = { enabled = true },
     -- scroll = { enabled = true },
@@ -32,7 +44,7 @@ return {
     { "<leader>/", function() Snacks.picker.grep() end, desc = "Grep" },
     { "<leader>:", function() Snacks.picker.command_history() end, desc = "Command History" },
     { "<leader>n", function() Snacks.picker.notifications() end, desc = "Notification History" },
-    { "<leader>e", function() Snacks.explorer() end, desc = "File Explorer" },
+    { "<leader>E", function() Snacks.explorer() end, desc = "File Explorer" },
     -- find
     { "<leader>fb", function() Snacks.picker.buffers() end, desc = "Buffers" },
     { "<leader>fc", function() Snacks.picker.files({ cwd = vim.fn.stdpath("config") }) end, desc = "Find Config File" },
@@ -54,7 +66,7 @@ return {
     { "<leader>sg", function() Snacks.picker.grep() end, desc = "Grep" },
     { "<leader>sw", function() Snacks.picker.grep_word() end, desc = "Visual selection or word", mode = { "n", "x" } },
     -- search
-    { '<leader>s"', function() Snacks.picker.registers() end, desc = "Registers" },
+    { '<leader>sr"', function() Snacks.picker.registers() end, desc = "Registers" },
     { '<leader>s/', function() Snacks.picker.search_history() end, desc = "Search History" },
     { "<leader>sa", function() Snacks.picker.autocmds() end, desc = "Autocmds" },
     { "<leader>sb", function() Snacks.picker.lines() end, desc = "Buffer Lines" },
