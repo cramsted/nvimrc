@@ -261,6 +261,7 @@ return {
 				"clang-format",
 				"codelldb",
 				-- "gopls",
+				"rustfmt",
 				"texlab",
 				"latexindent",
 			})
