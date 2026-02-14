@@ -13,27 +13,15 @@ return {
       enabled = true,
       timeout = 3000,
     },
-    picker = {
-      enabled = true,
-      -- win = {
-      --   input = {
-      --     keys = {
-      --       ["<C-n>"] = "list_down",
-      --       ["<C-p>"] = "list_up",
-      --       ["<Down>"] = "list_down",
-      --       ["<Up>"]   = "list_up",
-      --     },
-      --   },
-      -- },
-    },
+    picker = { enabled = true },
     quickfile = { enabled = true },
     scope = { enabled = true },
-    -- scroll = { enabled = true },
+    scroll = { enabled = true },
     statuscolumn = { enabled = true },
     words = { enabled = true },
     styles = {
       notification = {
-        -- wo = { wrap = true } -- Wrap notifications
+        wo = { wrap = true } -- Wrap notifications
       }
     }
   },

@@ -81,8 +81,7 @@ vim.opt.scrolloff = 5
 -- [[ Basic Keymaps ]]
 
 -- remap 'jj' to Esc
--- vim.keymap.set("i", "jj", "<Esc>")
-vim.keymap.set('i', 'jj', '<Esc>', { noremap = true, silent = true, nowait = true })
+vim.keymap.set("i", "jj", "<Esc>")
 
 -- Set highlight on search, but clear on pressing <Esc> in normal mode
 vim.opt.hlsearch = true
